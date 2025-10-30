@@ -23,7 +23,7 @@ export async function POST(req: Request) {
   | undefined;
   const groundingMetadata = metadata?.groundingMetadata;
 
-  console.log('groundingMetadata', JSON.stringify(groundingMetadata, null, 2));
+  console.log(JSON.stringify(groundingMetadata, null, 2));
 
   return result.toUIMessageStreamResponse();
 }
